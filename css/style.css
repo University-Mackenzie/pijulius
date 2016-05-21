@@ -1,0 +1,40 @@
+body {
+    color: #ccc;
+}
+#googlemaps {
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+#contactform {
+  position: relative;
+  z-index: 1; /* The z-index should be higher than Google Maps */
+  width: 80%;
+  margin: 150px auto 0;
+  padding: 10px;
+  background: white;
+  height: auto;
+  /*opacity: .45; !* Set the opacity for a slightly transparent Google Form *!*/
+}
+#contactform input {
+    border: 0;
+    outline: none;
+}
+#contactform #form1 {
+    /*height: 50px;*/
+}
+#contactform #form1 input[type="text"] {
+    width: 85%;
+    height: 40px;
+}
+#form2 {
+    display: none;
+}
+#form2 input {
+    height: 40px;
+    width: 95%;
+}
+

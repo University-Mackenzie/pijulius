@@ -1,0 +1,280 @@
+// Styles Begin
+
+@padding-sm: 15px;
+@padding-lg: 15px;
+
+@light: #4285f4;
+@red-light: #ee0600;
+@red-dark: #d50600;
+@dark: #3367d6;
+
+@orange: #f7941d;
+
+.demo--container {
+  width: 410px;
+  position: relative;
+  .button {
+    background-color: @light;
+    position: relative;
+    right: -30px;
+    float: right;
+  }
+}
+
+.directions {
+
+  & {
+    //box-shadow: 2px 0 10px 0 #c8c8c8;
+    height: 100vh;
+  }
+
+  .link-styles-dark {
+
+    color: white;
+
+    &:hover {
+      opacity: .6;
+      text-decoration: none;
+    }
+
+  }
+
+  .link-styles-light {
+
+    color: @light;
+
+    &:hover {
+      opacity: .6;
+      text-decoration: none;
+    }
+
+  }
+
+  &__basics {
+    background: @red-dark;
+    padding: @padding-sm;
+
+    &--header {
+
+      & {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+      }
+
+      a {
+        color: white;
+
+        &:hover {
+          opacity: .6;
+          text-decoration: none;
+        }
+      }
+
+      .directions--menu {
+        width: 10%;
+      }
+
+      .transportation--type {
+
+        & {
+          width: 80%;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          padding: 0 @padding-sm;
+        }
+
+        a {
+          opacity: .6;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .directions--close {
+        width: 10%;
+        text-align: right;
+      }
+
+    }
+
+    &--address {
+
+      & {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: @padding-lg 0 0 0;
+        margin-bottom: 15px;
+      }
+
+      a {
+        color: white;
+
+        &:hover {
+          opacity: .6;
+          text-decoration: none;
+        }
+      }
+
+      .inputs {
+        padding: 0 (@padding-lg * 2);
+        width: 100%;
+
+        input {
+          background: none;
+          padding: 0;
+          border: 0;
+          border-radius: 0;
+          box-shadow: none;
+          border-bottom: 1px solid white;
+          color: white;
+
+          &::-webkit-input-placeholder {
+            color: white;
+            opacity: .6;
+          }
+        }
+        /* Webkit */
+        ::-webkit-input-placeholder { color: #FFF; }
+
+        /* Firefox 4-18 */
+        :-moz-placeholder { color: #FFF; }
+
+        /* Firefox 19+ */
+        ::-moz-placeholder { color: #FFF; }
+
+        /* IE10+ */
+        :-ms-input-placeholder { color: #FFF; }
+      }
+
+      .toggle {
+        font-size: 28px;
+      }
+
+    }
+
+  }
+
+  &__options {
+    background: @red-light;
+    padding: @padding-sm;
+
+    & {
+      display: flex;
+      flex-flow: row nowrap;
+      font-size: 12px;
+    }
+
+    a {
+      color: white;
+
+      &:hover {
+        opacity: .6;
+        text-decoration: none;
+      }
+    }
+
+    .add {
+      width: 10%;
+    }
+
+    .leave {
+      width: 60%;
+    }
+
+    .options {
+      width: 30%;
+      text-transform: uppercase;
+      text-align: right;
+      font-size: 10px;
+    }
+
+  }
+
+  &__routes {
+    background: white;
+
+    a {
+      color: white;
+
+      &:hover {
+        opacity: .6;
+        text-decoration: none;
+      }
+    }
+
+    .route {
+
+      & {
+        display: flex;
+        flex-flow: row nowrap;
+        border-bottom: 1px solid #c8c8c8;
+        padding: @padding-sm;
+
+        &:hover {
+          cursor: pointer;
+          background: #FFEAED;
+        }
+      }
+
+      &__type {
+        width: 10%;
+        opacity: .6;
+      }
+
+      &__details {
+        width: 70%;
+        padding: 0 @padding-lg;
+
+        .via {
+          font-weight: 700;
+        }
+
+        .usual--time {
+          opacity: .5;
+        }
+
+        .details {
+          text-transform: uppercase;
+          line-height: 4em;
+          font-size: 12px;
+          font-weight: 700;
+          a {
+            color: @red-dark;
+          }
+        }
+
+      }
+
+      &__time {
+        width: 20%;
+        text-align: right;
+
+        .time {
+          color: @orange;
+          font-weight: 500;
+        }
+
+        .distance {
+          opacity: .6;
+        }
+      }
+    }
+  }
+  .directions__options {
+    a {
+      display: table;
+      font-size: 18px;
+      margin: 0 auto;
+      &:hover {
+        color: #ffff00;
+      }
+    }
+  }
+}
