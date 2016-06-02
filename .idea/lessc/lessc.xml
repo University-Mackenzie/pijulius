@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LessManager">
+    <option name="lessProfileMap">
+      <map>
+        <entry key="1">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="$PROJECT_DIR$/css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="1" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/css/less" />
+              <option name="name" value="custom-style.less" />
+            </LessProfile>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

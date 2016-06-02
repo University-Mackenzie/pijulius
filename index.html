@@ -20,211 +20,194 @@
 </head>
 <body>
 
-    <div id="googlemaps"></div>
+<div id="googlemaps"></div>
 
-    <!--<div id="contactform">-->
+<div id="demo--container" class="demo--container">
+    <div class="directions">
+        <div class="directions__basics">
+            <div class="directions__basics--header">
+                <div class="directions--menu">
+                    <a href="#">
+                        <!--<i class="fa fa-bars"></i>-->
+                    </a>
+                </div>
 
-        <!--<form id="form1" action="http://maps.google.com/maps" method="get" target="_blank">-->
-            <!--<label for="label1">Label 1</label>-->
-            <!--<input id="label1" name="label2" type="text" />-->
-            <!--<input name="city" type="hidden" value="350 5th Ave New York, NY 10018 (Empire State Building)" />-->
-            <!--<input type="submit" value="Procurar" />-->
-        <!--</form>-->
-        <!--<form id="form2" action="http://maps.google.com/maps" method="get" target="_blank">-->
-            <!--<label for="label2">Label 2</label>-->
-            <!--<input id="label2" name="label2" type="text" />-->
-            <!--<label for="label3">Label 3</label>-->
-            <!--<input id="label3" name="label3" type="text" />-->
-            <!--<input name="label3" type="hidden" value="350 5th Ave New York, NY 10018 (Empire State Building)" />-->
-        <!--</form>-->
+                <div class="transportation--type">
+                    <a href="#" class="sign">
+                        <!--<i class="fa fa-map-signs"></i>-->
+                    </a>
+                    <a href="#" class="car">
+                        <!--<i class="fa fa-car"></i>-->
+                    </a>
+                    <a href="#" class="train">
+                        <!--<i class="fa fa-train"></i>-->
+                    </a>
+                    <a href="#" class="walking">
+                        <!--<i class="fa fa-male"></i>-->
+                    </a>
+                    <a href="#" class="more">
+                        <!--<i class="fa fa-ellipsis-h"></i>-->
+                    </a>
+                </div>
 
-        <div id="demo--container" class="demo--container">
-            <div class="directions">
-                <div class="directions__basics">
-                    <div class="directions__basics--header">
-                        <div class="directions--menu">
-                            <a href="#">
-                                <!--<i class="fa fa-bars"></i>-->
-                            </a>
-                        </div>
+                <div class="directions--close">
+                    <a href="#">
+                        <!--<i class="fa fa-times"></i>-->
+                    </a>
+                </div>
 
-                        <div class="transportation--type">
-                            <a href="#" class="sign">
-                                <!--<i class="fa fa-map-signs"></i>-->
-                            </a>
-                            <a href="#" class="car">
-                                <!--<i class="fa fa-car"></i>-->
-                            </a>
-                            <a href="#" class="train">
-                                <!--<i class="fa fa-train"></i>-->
-                            </a>
-                            <a href="#" class="walking">
-                                <!--<i class="fa fa-male"></i>-->
-                            </a>
-                            <a href="#" class="more">
-                                <!--<i class="fa fa-ellipsis-h"></i>-->
-                            </a>
-                        </div>
+            </div>
 
-                        <div class="directions--close">
-                            <a href="#">
-                                <!--<i class="fa fa-times"></i>-->
-                            </a>
-                        </div>
+            <div class="directions__basics--address">
 
-                    </div>
+                <div class="path--icon">
+                    <img src="http://localhost:63342/pijulius/images/pin.png" alt="icon" />
+                </div>
 
-                    <div class="directions__basics--address">
-
-                        <div class="path--icon">
-                            <img src="http://localhost:63342/ppjInt/images/pin.png" alt="icon" />
-                        </div>
-
-                        <div class="inputs">
-
-                            <div class="row">
-
-                                <!-- Starting Point -->
-                                <div class="col-xs-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="address-one" placeholder="Opção 1" onFocus="geolocate();">
-                                    </div>
-                                </div>
-                                <!-- / -->
-
-                                <!-- Destination -->
-                                <div class="col-xs-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="address-two" placeholder="Opção 2" required>
-                                    </div>
-                                </div>
-                                <!-- / -->
+                <div class="inputs">
+                    <div class="row">
+                        <!-- Starting Point -->
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="address-one" placeholder="Opção 1">
                             </div>
                         </div>
+                        <!-- / -->
 
-                        <!--<div class="toggle">-->
-                            <!--<a href="#">-->
-                                <!--<i class="fa fa-sort"></i>-->
-                            <!--</a>-->
-                        <!--</div>-->
+                        <!-- Destination -->
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="address-two" placeholder="Opção 2">
+                            </div>
+                        </div>
+                        <!-- / -->
                     </div>
                 </div>
 
-                <div class="directions__options">
-                    <a id="procurar" href="#">PROCURAR</a>
-                    <!--<div class="add">-->
-                        <!--<a href="#">-->
-                            <!--<i class="fa fa-plus-circle"></i>-->
-                        <!--</a>-->
-                    <!--</div>-->
-
-                    <!--<div class="leave">-->
-                        <!--<a href="#">-->
-                            <!--Link-->
-                            <!--<i class="fa fa-sort-desc"></i>-->
-                        <!--</a>-->
-                    <!--</div>-->
-
-                    <!--<div class="options">-->
-                        <!--<a href="#">-->
-                            <!--Opções-->
-                        <!--</a>-->
-                    <!--</div>-->
-                </div>
-
-                <div id="directions__routes" class="directions__routes">
-
-                    <!-- Route One -->
-                    <div class="route">
-
-                        <div class="route__type">
-                            <!--<i class="fa fa-car"></i>-->
-                            <i class="fa fa-male"></i>
-                        </div>
-
-                        <div class="route__details">
-                            <div class="via">
-                                via Northern State Parkway
-                            </div>
-                            <div class="usual--time">
-                                14 min without traffic
-                            </div>
-                            <div class="details">
-                                <a href="#">Details</a>
-                            </div>
-                        </div>
-
-                        <div class="route__time">
-                            <div class="time">19 mins</div>
-                            <div class="distance">9.1 miles</div>
-                        </div>
-
-                    </div>
-                    <!-- / -->
-
-                    <!-- Route Two -->
-                    <!--<div class="route">-->
-
-                        <!--<div class="route__type">-->
-                            <!--<i class="fa fa-car"></i>-->
-                        <!--</div>-->
-
-                        <!--<div class="route__details">-->
-                            <!--<div class="via">-->
-                                <!--via Northern State Parkway-->
-                            <!--</div>-->
-                            <!--<div class="usual&#45;&#45;time">-->
-                                <!--14 min without traffic-->
-                            <!--</div>-->
-                            <!--<div class="details">-->
-                                <!--<a href="#">Details</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <!--<div class="route__time">-->
-                            <!--<div class="time">19 mins</div>-->
-                            <!--<div class="distance">9.1 miles</div>-->
-                        <!--</div>-->
-
-                    <!--</div>-->
-                    <!-- / -->
-
-                    <!-- Route Three -->
-                    <!--<div class="route">-->
-
-                        <!--<div class="route__type">-->
-                            <!--<i class="fa fa-car"></i>-->
-                        <!--</div>-->
-
-                        <!--<div class="route__details">-->
-                            <!--<div class="via">-->
-                                <!--via Northern State Parkway-->
-                            <!--</div>-->
-                            <!--<div class="usual&#45;&#45;time">-->
-                                <!--14 min without traffic-->
-                            <!--</div>-->
-                            <!--<div class="details">-->
-                                <!--<a href="#">Details</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <!--<div class="route__time">-->
-                            <!--<div class="time">19 mins</div>-->
-                            <!--<div class="distance">9.1 miles</div>-->
-                        <!--</div>-->
-
-                    <!--</div>-->
-                    <!-- / -->
-
-                </div>
+                <!--<div class="toggle">-->
+                <!--<a href="#">-->
+                <!--<i class="fa fa-sort"></i>-->
+                <!--</a>-->
+                <!--</div>-->
             </div>
         </div>
 
-    <!--</div>&lt;!&ndash;contactform&ndash;&gt;-->
+        <div class="directions__options">
+            <a id="procurar" href="#">PROCURAR</a>
+            <!--<div class="add">-->
+            <!--<a href="#">-->
+            <!--<i class="fa fa-plus-circle"></i>-->
+            <!--</a>-->
+            <!--</div>-->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-    <script src="js/myscripts.js"></script>
-    <script src="js/geo-scripts.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdgq5kkl3qAzCkJQ77aQmvBYhWeK1qxH0&signed_in=false&libraries=places&callback=initAutocomplete" async defer></script>
+            <!--<div class="leave">-->
+            <!--<a href="#">-->
+            <!--Link-->
+            <!--<i class="fa fa-sort-desc"></i>-->
+            <!--</a>-->
+            <!--</div>-->
+
+            <!--<div class="options">-->
+            <!--<a href="#">-->
+            <!--Opções-->
+            <!--</a>-->
+            <!--</div>-->
+        </div>
+
+        <div id="directions__routes" class="directions__routes">
+
+            <!-- Route One -->
+            <div class="route">
+
+                <div class="route__type">
+                    <!--<i class="fa fa-car"></i>-->
+                    <i class="fa fa-male"></i>
+                </div>
+
+                <div class="route__details">
+                    <div class="via">
+                        via Northern State Parkway
+                    </div>
+                    <div class="usual--time">
+                        14 min without traffic
+                    </div>
+                    <div class="details">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
+
+                <div class="route__time">
+                    <div class="time">19 mins</div>
+                    <div class="distance">9.1 miles</div>
+                </div>
+
+            </div>
+            <!-- / -->
+
+            <!-- Route Two -->
+            <!--<div class="route">-->
+
+            <!--<div class="route__type">-->
+            <!--<i class="fa fa-car"></i>-->
+            <!--</div>-->
+
+            <!--<div class="route__details">-->
+            <!--<div class="via">-->
+            <!--via Northern State Parkway-->
+            <!--</div>-->
+            <!--<div class="usual&#45;&#45;time">-->
+            <!--14 min without traffic-->
+            <!--</div>-->
+            <!--<div class="details">-->
+            <!--<a href="#">Details</a>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="route__time">-->
+            <!--<div class="time">19 mins</div>-->
+            <!--<div class="distance">9.1 miles</div>-->
+            <!--</div>-->
+
+            <!--</div>-->
+            <!-- / -->
+
+            <!-- Route Three -->
+            <!--<div class="route">-->
+
+            <!--<div class="route__type">-->
+            <!--<i class="fa fa-car"></i>-->
+            <!--</div>-->
+
+            <!--<div class="route__details">-->
+            <!--<div class="via">-->
+            <!--via Northern State Parkway-->
+            <!--</div>-->
+            <!--<div class="usual&#45;&#45;time">-->
+            <!--14 min without traffic-->
+            <!--</div>-->
+            <!--<div class="details">-->
+            <!--<a href="#">Details</a>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="route__time">-->
+            <!--<div class="time">19 mins</div>-->
+            <!--<div class="distance">9.1 miles</div>-->
+            <!--</div>-->
+
+            <!--</div>-->
+            <!-- / -->
+
+        </div>
+    </div>
+</div>
+
+<!--</div>&lt;!&ndash;contactform&ndash;&gt;-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="js/geo-scripts.js"></script>
+<script src="js/myscripts.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdgq5kkl3qAzCkJQ77aQmvBYhWeK1qxH0&signed_in=true&libraries=places&callback=initMap"
+        async defer></script>
 </body>
 </html>
